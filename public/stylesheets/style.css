@@ -1,17 +1,20 @@
 body {
-  background-image: url("../images/classy_fabric.png");
-  background-color: rgb(40,41,43);
-  color: rgb(112, 168, 60);
+  /*background-image: url("../images/classy_fabric.png");
+  background-color: rgb(40,41,43);*/
+  background-color: #FFFFFF;
+  /*color: rgb(112, 168, 60);*/
+  color: #000000;
+  font-family: 'Open Sans', sans-serif;
 }
 
-.bottom-buffer { margin-bottom: 4.0em; }
-
 a {
-  color: rgb(112, 168, 60);
+  /*color: rgb(112, 168, 60);*/
+  color: #000000;
 }
 
 a:focus, a:hover {
-  color: rgb(87, 143, 35);
+  /*color: rgb(87, 143, 35);*/
+  color: #000000;
 }
 
 .big-icon {
@@ -20,7 +23,6 @@ a:focus, a:hover {
 
 .align-center {
   text-align: center;
-  padding: auto;
 }
 
 .fontawesome-pad-left {
@@ -29,4 +31,12 @@ a:focus, a:hover {
 
 .top-buffer {
   margin-top: 20px;
+}
+
+header {
+  margin-bottom: 50px;
+}
+
+main {
+  margin-bottom: 80px;
 }
