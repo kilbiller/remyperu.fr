@@ -1,8 +1,32 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url("../images/classy_fabric.png");
+  background-color: rgb(40,41,43);
+  color: rgb(112, 168, 60);
 }
 
+.bottom-buffer { margin-bottom: 4.0em; }
+
 a {
-  color: #00B7FF;
+  color: rgb(112, 168, 60);
+}
+
+a:focus, a:hover {
+  color: rgb(87, 143, 35);
+}
+
+.big-icon {
+  font-size: 192px;
+}
+
+.align-center {
+  text-align: center;
+  padding: auto;
+}
+
+.fontawesome-pad-left {
+  padding-left: 15px;
+}
+
+.top-buffer {
+  margin-top: 20px;
 }
