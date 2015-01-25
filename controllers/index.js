@@ -8,5 +8,6 @@ var portfolio = require('./portfolio.js');
 router.get('/', home.index);
 router.get('/cv', cv.index);
 router.get('/portfolio', portfolio.index);
+router.get('/portfolio/opentaxepub', portfolio.opentaxepub);
 
 module.exports = router;
