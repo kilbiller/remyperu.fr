@@ -47,6 +47,10 @@ a, a:hover, a:focus {
   margin-top: 20px;
 }
 
+.i-padding-right {
+  padding-right: 5px;
+}
+
 @media print {
   a[href]:after {
     content: none !important;
