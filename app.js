@@ -8,8 +8,6 @@ var helmet = require('helmet');
 
 var app = express();
 
-app.use(helmet());
-
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
@@ -21,6 +19,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use(helmet());
 app.use('/', require('./controllers'));
 
 // catch 404 and forward to error handler
