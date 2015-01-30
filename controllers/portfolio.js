@@ -4,6 +4,18 @@ module.exports = {
   },
 
   opentaxepub: function(req, res, next) {
-    res.render('portfolio_opentaxepub');
+    res.render('projects/opentaxepub');
+  },
+
+  symfonyblog: function(req, res, next) {
+    res.render('projects/symfonyblog');
+  },
+
+  thesaurus: function(req, res, next) {
+    res.render('projects/thesaurus');
+  },
+
+  diagarchi: function(req, res, next) {
+    res.render('projects/diagarchi');
   }
 };

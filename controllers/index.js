@@ -13,6 +13,9 @@ router.get('/cv', cv.index);
 
 router.get('/portfolio', portfolio.index);
 router.get('/portfolio/opentaxepub', portfolio.opentaxepub);
+router.get('/portfolio/symfonyblog', portfolio.symfonyblog);
+router.get('/portfolio/thesaurus', portfolio.thesaurus);
+router.get('/portfolio/diagarchi', portfolio.diagarchi);
 
 router.get('/contact', contact.index);
 router.post('/contact', contact.post);
