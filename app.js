@@ -23,7 +23,7 @@ app.use(session({
   resave: false,
   saveUninitialized: true
 }));
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public'), { maxAge: 31557600000 }));
 app.use(lusca({
   csrf: true,
   xframe: 'SAMEORIGIN',
