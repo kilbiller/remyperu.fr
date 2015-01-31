@@ -11,9 +11,12 @@ var compress = require('compression');
 
 var app = express();
 
+// set global variables
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
+
+// load middlewares
 app.use(compress());
 app.use(favicon(__dirname + '/public/favicon.ico'));
 app.use(logger('dev'));
