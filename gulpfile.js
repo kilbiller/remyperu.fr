@@ -10,7 +10,7 @@ gulp.task('browser-sync', ['nodemon'], function() {
 });
 
 gulp.task('default', ['browser-sync'], function () {
-  gulp.watch(["public/stylesheets/*.css"], reload);
+  gulp.watch(["public/stylesheets/*.css", "views/*", "controllers/*"], reload);
 });
 
 gulp.task('nodemon', function (cb) {
