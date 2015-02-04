@@ -1,0 +1,72 @@
+/* site wide */
+body {
+  /*background-image: url("../images/classy_fabric.png");*/
+  /*background-color: rgb(40,41,43);*/
+  background-color: #FFFFFF;
+  /*color: rgb(112, 168, 60);*/
+  color: #000000;
+  font-family: 'Open Sans', sans-serif; }
+
+a, a:hover, a:focus {
+  color: #000000;
+  /*color: rgb(112, 168, 60);*/ }
+
+/* header */
+header {
+  margin-bottom: 50px; }
+  header a:hover, header a:focus {
+    text-decoration: none; }
+
+.fontawesome-pad-left {
+  padding-left: 15px; }
+
+.top-buffer {
+  margin-top: 20px; }
+
+/* footer */
+footer {
+  margin-top: 50px; }
+
+/* home page */
+.big-icon {
+  font-size: 192px; }
+
+.color-fade {
+  /*color: rgb(112, 168, 60);*/
+  transition: color 0.5s ease;
+  -o-transition: color 0.5s ease;
+  -moz-transition: color 0.5s ease;
+  -webkit-transition: color 0.5s ease; }
+
+.color-fade:hover {
+  /*color: rgb(87, 143, 35);*/
+  color: #666666;
+  /*color: rgb(87, 143, 35);*/ }
+
+/* portfolio page*/
+.project-fade {
+  transition: opacity 0.5s ease;
+  -o-transition: opacity 0.5s ease;
+  -moz-transition: opacity 0.5s ease;
+  -webkit-transition: opacity 0.5s ease; }
+
+.project-fade:hover {
+  opacity: 0.7; }
+
+/* cv page*/
+.i-padding-right {
+  padding-right: 5px; }
+
+/* contact page */
+.form-control:focus {
+  border-color: #000000;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 0, 0, 0.6); }
+
+/* printable cv */
+@media print {
+  a[href]:after {
+    content: none !important; }
+  .social-links {
+    display: none; }
+  footer {
+    display: none; } }
