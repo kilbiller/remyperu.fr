@@ -19,7 +19,7 @@ gulp.task("server", function() {
   if(node) {
     node.kill();
   }
-  node = spawn("node", ["app.js"], {
+  node = spawn("node", ["index.js"], {
     stdio: "inherit"
   });
   node.on("close", function(code) {
@@ -43,5 +43,5 @@ gulp.task("css", function() {
 
 gulp.task("default", ["css", "server", "browser-sync"], function() {
   gulp.watch("scss/*.scss", ["css"]);
-  gulp.watch(["app.js", "routes.js", "views/**/*.jade", "controllers/**/*.js"], ["server", browserSync.reload]);
+  gulp.watch(["index.js", "routes.js", "views/**/*.jade", "controllers/**/*.js"], ["server", browserSync.reload]);
 });
