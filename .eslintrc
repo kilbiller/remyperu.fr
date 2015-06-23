@@ -1,0 +1,18 @@
+{
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true
+  },
+  "ecmaFeatures": {
+    "modules": true,
+    "jsx": true
+  },
+  "rules": {
+    "strict": [2, "global"],
+    "space-return-throw-case": 0,
+    "no-unused-vars": 1,
+    "new-cap": 1,
+    "no-shadow": 0
+  }
+}
