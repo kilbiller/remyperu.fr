@@ -8,6 +8,10 @@ import {
 }
 from "child_process";
 
+var config = {
+  production: false
+};
+
 gulp.task("browser-sync", function() {
   browserSync.init({
     proxy: "localhost:8000"
@@ -45,3 +49,9 @@ gulp.task("default", ["css", "server", "browser-sync"], function() {
   gulp.watch("scss/*.scss", ["css"]);
   gulp.watch(["index.js", "routes.js", "views/**/*.jade", "controllers/**/*.js"], ["server", browserSync.reload]);
 });
+
+gulp.task("production", function() {
+  config.production = true;
+});
+
+gulp.task("build", ["production", "css"]);
