@@ -6,4 +6,4 @@ Bootstrap 3.3.5
 Font Awesome 4.3.0
 
 ## To deploy
-test
+git push web
