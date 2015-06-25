@@ -57,5 +57,33 @@ module.exports = {
     res.render("portfolio_project", {
       project: project
     });
+  },
+
+  html5gameengine: function(req, res, next) {
+    var project = {
+      name: "HTML5GameEngine",
+      date: "Avril 2014 - Juin 2014",
+      images: ["http://placehold.it/350x350", "http://placehold.it/350x350"],
+      description: "Le diagnostic architectural nomade est ...",
+      technologies: ["HTML", "Javascript", "Angular", "Cordova"],
+      href: null
+    };
+    res.render("portfolio_project", {
+      project: project
+    });
+  },
+
+  reactapp: function(req, res, next) {
+    var project = {
+      name: "ReactApp",
+      date: "Avril 2014 - Juin 2014",
+      images: ["http://placehold.it/350x350", "http://placehold.it/350x350"],
+      description: "Le diagnostic architectural nomade est ...",
+      technologies: ["HTML", "Javascript", "Angular", "Cordova"],
+      href: null
+    };
+    res.render("portfolio_project", {
+      project: project
+    });
   }
 };
