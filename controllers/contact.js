@@ -10,8 +10,6 @@ module.exports = {
     var nom = req.body.nom;
     var message = req.body.message;
 
-    console.log(email);
-
     if(!email || !nom || !message) {
       res.render("contact", {
         error: "Remplissez tous les champs s'il vous plaît."

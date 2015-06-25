@@ -4,7 +4,6 @@ var favicon = require("serve-favicon");
 var logger = require("morgan");
 var bodyParser = require("body-parser");
 var session = require("express-session");
-var lusca = require("lusca");
 var errorhandler = require("errorhandler");
 var compress = require("compression");
 
@@ -20,18 +19,11 @@ app.use(compress());
 app.use(favicon(path.join(__dirname, "/public/favicon.ico")));
 app.use(logger("dev"));
 app.use(bodyParser.json());
-app.use(session({
-  secret: "dfgdf4hdfgh54s",
-  resave: true,
-  saveUninitialized: true
+app.use(bodyParser.urlencoded({
+  extended: true
 }));
 app.use(express.static(path.join(__dirname, "public"), {
   maxAge: 31557600000
-}));
-app.use(lusca({
-  csrf: true,
-  xframe: "SAMEORIGIN",
-  xssProtection: true
 }));
 
 // load routes

@@ -78,6 +78,19 @@ footer {
   padding-right: 5px;
 }
 
+.cv-iframe {
+  width: 1024px;
+  height: 1442px;
+  border: 0;
+  display:block;
+  margin: auto;
+
+  @media (max-width: 1150px) {
+    width: 595px;
+    height: 838px;
+  }
+}
+
 /* contact page */
 
 .form-control:focus {
