@@ -3,6 +3,16 @@ extends layout
 block content
   section
     div.row
+      each project in projects
+        article.col-md-4
+          a(href="/portfolio/" + project.name)
+            img(src=project.thumbnail).img-responsive.center-block.img-rounded.fade-effect
+          h3.text-center
+            a(href="/portfolio/" + project.name) #{project.name}
+          p.text-justify.truncate #{project.description}
+  //-
+    section
+    div.row
       article.col-md-4
         a(href="/portfolio/reactapp")
           img(src="http://placehold.it/350x300").img-responsive.center-block.img-rounded.fade-effect

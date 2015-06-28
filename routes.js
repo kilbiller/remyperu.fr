@@ -12,12 +12,7 @@ router.get("/", home.index);
 router.get("/cv", cv.index);
 
 router.get("/portfolio", portfolio.index);
-router.get("/portfolio/:project", function(req, res, next) {
-  if(typeof portfolio[req.params.project] !== "function") {
-    return next();
-  }
-  portfolio[req.params.project](req, res, next);
-});
+router.get("/portfolio/:project", portfolio.project);
 
 router.get("/contact", contact.index);
 router.post("/contact", contact.post);
