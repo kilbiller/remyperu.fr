@@ -6,10 +6,10 @@ block content
       each project in projects
         article.col-md-4
           a(href="/portfolio/" + project.name)
-            img(src=project.thumbnail).img-responsive.center-block.img-rounded.fade-effect
+            img(src=project.thumbnail).img-responsive.center-block.img-rounded.fade-effect.portfolio_thumbnail
           h3.text-center
             a(href="/portfolio/" + project.name) #{project.name}
-          p.text-justify.truncate #{project.description}
+          div.text-justify !{locals.marked(locals.trunc(project.description, 100))}
   //-
     section
     div.row

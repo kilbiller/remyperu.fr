@@ -12,7 +12,7 @@ block content
     div.col-md-8.col-sm-8
       dl.dl-horizontal
         dt Description du projet
-        dd #{project.description}
+        dd !{locals.marked(project.description)}
       dl.dl-horizontal
         dt Technologies utilisées
         dd: ul

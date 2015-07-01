@@ -5,6 +5,8 @@ var logger = require("morgan");
 var bodyParser = require("body-parser");
 var errorhandler = require("errorhandler");
 var compress = require("compression");
+var marked = require("marked");
+var trunc = require("lodash/string/trunc");
 
 var app = express();
 
@@ -12,6 +14,11 @@ var app = express();
 app.set("port", process.env.PORT || 8000);
 app.set("views", path.join(__dirname, "views"));
 app.set("view engine", "jade");
+
+// to use markdown in templates
+app.locals.marked = marked;
+// to truncate strings
+app.locals.trunc = trunc;
 
 // load middlewares
 app.use(compress());

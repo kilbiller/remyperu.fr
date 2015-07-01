@@ -47,7 +47,7 @@ gulp.task("css", function() {
 
 gulp.task("default", ["css", "server", "browser-sync"], function() {
   gulp.watch("scss/*.scss", ["css"]);
-  gulp.watch(["index.js", "routes.js", "views/**/*.jade", "controllers/**/*.js"], ["server", browserSync.reload]);
+  gulp.watch(["index.js", "routes.js", "views/**/*.jade", "controllers/**/*.js", "controllers/**/*.json"], ["server", browserSync.reload]);
 });
 
 gulp.task("production", function() {

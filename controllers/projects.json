@@ -5,7 +5,7 @@
   "images": ["http://placehold.it/350x350", "http://placehold.it/350x350"],
   "description": "Le diagnostic architectural nomade est ...",
   "technologies": ["HTML", "Javascript", "Angular", "Cordova"],
-  "href": null
+  "href": "https://github.com/kilbiller/reactapp"
 }, {
   "name": "HTML5GameEngine",
   "date": "Avril 2014 - Juin 2014",
@@ -13,7 +13,7 @@
   "images": ["http://placehold.it/350x350", "http://placehold.it/350x350"],
   "description": "Le diagnostic architectural nomade est ...",
   "technologies": ["HTML", "Javascript", "Angular", "Cordova"],
-  "href": null
+  "href": "https://kilbiller.github.io/Html5GameEngine/"
 }, {
   "name": "DiagArchi",
   "date": "Avril 2014 - Juin 2014",
@@ -29,7 +29,7 @@
   "images": ["http://placehold.it/350x350", "http://placehold.it/350x350"],
   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper arcu lectus, sit amet vulputate tortor vestibulum et.",
   "technologies": ["PHP", "Javascript", "SQL", "Oracle", "etc..."],
-  "href": null
+  "href": "https://github.com/kilbiller/ThesaurusBDD"
 }, {
   "name": "Blog Symfony",
   "date": "2014",
@@ -38,6 +38,14 @@
   "description": "Once Upon a Blog est un projet de master visant a développer un blog en PHP en utilisant le Framework Symfony 2",
   "technologies": ["PHP", "Symfony 2", "etc..."],
   "href": null
+}, {
+  "name": "ProjectMinecraft",
+  "date": "2013",
+  "thumbnail": "http://placehold.it/350x300",
+  "images": ["http://placehold.it/350x350", "http://placehold.it/350x350"],
+  "description": "Projet S6: Génération de monde Minecraft \n\n[Rappport de projet](https://drive.google.com/file/d/0B-HUrU55uuTtQ3JmRW1KZjRTb3doSEJHSGRhZkV6VTNsTlBF/view?usp=sharing)",
+  "technologies": ["Java"],
+  "href": "https://github.com/kilbiller/ProjectMinecraft"
 }, {
   "name": "OpenTaxePub",
   "date": "Avril 2012 - Juin 2012",
