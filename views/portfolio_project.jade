@@ -7,7 +7,8 @@ block content
       small #{project.date}
     div.col-md-4.col-sm-4
       each image in project.images
-        img(src=image).img-responsive.center-block
+        a(href=image) 
+          img(src=image).img-responsive.center-block
         span &nbsp
     div.col-md-8.col-sm-8
       dl.dl-horizontal

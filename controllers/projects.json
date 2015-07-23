@@ -1,34 +1,34 @@
 [{
   "name": "ReactApp",
-  "date": "Avril 2014 - Juin 2014",
-  "thumbnail": "http://placehold.it/350x300",
-  "images": ["http://placehold.it/350x350", "http://placehold.it/350x350"],
-  "description": "Le diagnostic architectural nomade est ...",
-  "technologies": ["HTML", "Javascript", "Angular", "Cordova"],
+  "date": "Juin 2015 - ???",
+  "thumbnail": "/images/reactapp1.svg",
+  "images": ["/images/reactapp1.svg"],
+  "description": "Une application web monopage réalisée grâce à la librarie React développée par Facebook. Cette application permet de garder une trace de tout les animes que l'on regarde et permet de suivre les sorties récentes grâce â un calendrier. L'application communique avec le serveur grâce à une API REST sécurisée avec des JSON Web Tokens.",
+  "technologies": ["HTML", "Javascript", "React", "Express", "MongoDB"],
   "href": "https://github.com/kilbiller/reactapp"
 }, {
   "name": "HTML5GameEngine",
-  "date": "Avril 2014 - Juin 2014",
-  "thumbnail": "http://placehold.it/350x300",
-  "images": ["http://placehold.it/350x350", "http://placehold.it/350x350"],
-  "description": "Le diagnostic architectural nomade est ...",
-  "technologies": ["HTML", "Javascript", "Angular", "Cordova"],
+  "date": "Janvier 2015 - ???",
+  "thumbnail": "/images/html5gameengine1.png",
+  "images": ["/images/html5gameengine1.png"],
+  "description": "Un framework développé en Javascript permettant de faire des jeux en 2D. Utilise Pixi.js pour l'affichage des graphiques avec WebGL. Utilise Howler.js pour gérer la musique et les SFX.\n\n ###Contient\n\n * un ECS(Entity / Component / System Architecture)\n\n * un AssetManager\n\n * une gestion d'animations à l'aide de spritesheet\n\n * un système de détection et de réponse au collision\n\n * un StateManager\n\n * un Variable Time Step\n\n * supporte des carte crées grâce au logiciel Tiled",
+  "technologies": ["HTML", "Javascript", "Pixi.js", "Howler.js"],
   "href": "https://kilbiller.github.io/Html5GameEngine/"
 }, {
   "name": "DiagArchi",
   "date": "Avril 2014 - Juin 2014",
-  "thumbnail": "http://placehold.it/350x300",
-  "images": ["http://placehold.it/350x350", "http://placehold.it/350x350"],
-  "description": "Le diagnostic architectural nomade est ...",
-  "technologies": ["HTML", "Javascript", "Angular", "Cordova"],
+  "thumbnail": "https://drive.google.com/uc?export=view&id=0B-HUrU55uuTtZUxnRnFRUjNNcEk",
+  "images": ["https://drive.google.com/uc?export=view&id=0B-HUrU55uuTtOWN6Z0lILUlsajg", "https://drive.google.com/uc?export=view&id=0B-HUrU55uuTtWi1TZE44cnhyQVE", "https://drive.google.com/uc?export=view&id=0B-HUrU55uuTtRnBJVm9heVZhSFE"],
+  "description": "Réalistion sur 6 mois d'une application mobile native en Javscript permettant d'affectuer un diagnostic rapide de l'état de santé des arbres en forêts. Ter de master.\n\n [Lien vers le rappport du projet](https://drive.google.com/file/d/0B-HUrU55uuTtSjVMQzMtczNJM2c/view?usp=sharing)",
+  "technologies": ["HTML", "Javascript", "Cordova", "Angular", "Leaflet", "D3.js", "Bootstrap"],
   "href": null
 }, {
   "name": "Thesaurus",
   "date": "2014",
-  "thumbnail": "http://placehold.it/350x300",
-  "images": ["http://placehold.it/350x350", "http://placehold.it/350x350"],
-  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper arcu lectus, sit amet vulputate tortor vestibulum et.",
-  "technologies": ["PHP", "Javascript", "SQL", "Oracle", "etc..."],
+  "thumbnail": "/images/thesaurus1.gif",
+  "images": ["/images/thesaurus1.gif"],
+  "description": "Développement d'un site web en PHP hébergeant un Thésaurus dans le cadre d'un enseignement sur les bases de données avec objets relationnels. Utilise les objets relationnels d'Oracle",
+  "technologies": ["PHP", "Javascript", "SQL", "Oracle", "Twig"],
   "href": "https://github.com/kilbiller/ThesaurusBDD"
 }, {
   "name": "Blog Symfony",
@@ -36,22 +36,22 @@
   "thumbnail": "http://placehold.it/350x300",
   "images": ["http://placehold.it/350x350", "http://placehold.it/350x350"],
   "description": "Once Upon a Blog est un projet de master visant a développer un blog en PHP en utilisant le Framework Symfony 2",
-  "technologies": ["PHP", "Symfony 2", "etc..."],
+  "technologies": ["PHP", "Symfony 2"],
   "href": null
 }, {
   "name": "ProjectMinecraft",
   "date": "2013",
-  "thumbnail": "http://placehold.it/350x300",
-  "images": ["http://placehold.it/350x350", "http://placehold.it/350x350"],
-  "description": "Projet S6: Génération de monde Minecraft \n\n[Rappport de projet](https://drive.google.com/file/d/0B-HUrU55uuTtQ3JmRW1KZjRTb3doSEJHSGRhZkV6VTNsTlBF/view?usp=sharing)",
-  "technologies": ["Java"],
+  "thumbnail": "/images/minecraft1.png",
+  "images": ["/images/minecraft1.png", "/images/minecraft2.png", "/images/minecraft3.png"],
+  "description": "Projet S6: Génération de monde Minecraft \n\n[Lien vers le rappport de projet](https://drive.google.com/file/d/0B-HUrU55uuTtQ3JmRW1KZjRTb3doSEJHSGRhZkV6VTNsTlBF/view?usp=sharing)",
+  "technologies": ["Java", "OpenStreetMap"],
   "href": "https://github.com/kilbiller/ProjectMinecraft"
 }, {
   "name": "OpenTaxePub",
   "date": "Avril 2012 - Juin 2012",
-  "thumbnail": "http://placehold.it/350x300",
-  "images": ["http://placehold.it/350x350", "http://placehold.it/350x350"],
-  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ullamcorper arcu lectus, sit amet vulputate tortor vestibulum et. Nunc auctor semper consequat. Ut placerat sagittis erat, at commodo nisi molestie vitae. Fusce at diam non ligula mollis condimentum in eget enim. Nam at mattis ante. Donec non sem sagittis, consequat est ut, finibus turpis. Nulla dapibus lacus quis felis congue, id hendrerit ipsum sagittis. Nullam consectetur leo felis, feugiat consequat arcu mattis eu. Pellentesque commodo justo vel neque aliquet, a faucibus lacus egestas.",
-  "technologies": ["PHP", "Javascript", "etc.."],
+  "thumbnail": "/images/opentaxepub.png",
+  "images": ["/images/opentaxepub.png", "/images/opentaxepub2.png"],
+  "description": "Réalisation d'une application web en php permettant de calculer les taxes anuelles sur les panneaux de publicité pour la commune d'Arles lors d'un stage de 3 mois de fin d'études à la Direction des systèmes d'information et télécommunication de la mairie d'Arles en que développeur et intégrateur PHP.",
+  "technologies": ["PHP", "Javascript", "OpenMairie"],
   "href": "http://www.openmairie.org/catalogue/opentaxepub/opentaxepub-gestion-des-taxes-sur-la-publicite"
 }]
