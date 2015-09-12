@@ -3,7 +3,6 @@ Mon site personnel hébergé sur https://remyperu.fr
 
 Contient :
 * Mon portfolio
-* Mon CV
 
 ## Librairies utilisées
 * Express
