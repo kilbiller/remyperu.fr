@@ -1,9 +1,6 @@
 # remyperu.fr
 Mon site personnel hébergé sur https://remyperu.fr
 
-Contient :
-* Mon portfolio
-
 ## Librairies utilisées
 * Express
 * Jade
