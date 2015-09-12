@@ -6,7 +6,6 @@ Contient :
 * Mon CV
 * Un lien vers mon blog
 * Une page "A propos"
-* Une page de contact
 
 ## Librairies utilisées
 * Express
