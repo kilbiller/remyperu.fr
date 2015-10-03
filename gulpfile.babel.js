@@ -2,7 +2,7 @@ import gulp from "gulp";
 import browserSync from "browser-sync";
 import sass from "gulp-sass";
 import postcss from "gulp-postcss";
-import autoprefixer from "autoprefixer-core";
+import autoprefixer from "autoprefixer";
 import {
   spawn
 }
