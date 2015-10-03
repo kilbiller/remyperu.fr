@@ -1,12 +1,5 @@
 # remyperu.fr
-Mon site personnel hébergé sur http://remyperu.fr
-
-Contient :
-* Mon portfolio
-* Mon CV
-* Un lien vers mon blog
-* Une page "A propos"
-* Une page de contact
+Mon site personnel hébergé sur https://remyperu.fr
 
 ## Librairies utilisées
 * Express
