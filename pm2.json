@@ -1,8 +1,0 @@
-{
-  "name": "remyperu.fr",
-  "script": "index.js",
-  "env": {
-    "NODE_ENV": "production",
-    "PORT": 8000
-  }
-}

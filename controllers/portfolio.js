@@ -8,8 +8,8 @@ module.exports = {
   },
 
   project: function(req, res, next) {
-    for(var i = 0; i < projects.length; i++) {
-      if(projects[i].name && projects[i].name === req.params.project) {
+    for (var i = 0; i < projects.length; i++) {
+      if (projects[i].name && projects[i].name === req.params.project) {
         return res.render("portfolio_project", {
           project: projects[i]
         });

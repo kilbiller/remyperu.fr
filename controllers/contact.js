@@ -10,7 +10,7 @@ module.exports = {
     var nom = req.body.nom;
     var message = req.body.message;
 
-    if(!email || !nom || !message) {
+    if (!email || !nom || !message) {
       res.render("contact", {
         error: "Remplissez tous les champs s'il vous plaît."
       });
@@ -19,7 +19,8 @@ module.exports = {
       var transporter = nodemailer.createTransport({
         service: "Mailgun",
         auth: {
-          user: "postmaster@sandbox37fa23be0e57496e89768204e7097db9.mailgun.org",
+          user:
+            "postmaster@sandbox37fa23be0e57496e89768204e7097db9.mailgun.org",
           pass: "f033ad61e71daccded430aaa4867ed79"
         }
       });
@@ -34,7 +35,7 @@ module.exports = {
 
       // send mail with defined transport object
       transporter.sendMail(mailOptions, function(error, info) {
-        if(error) {
+        if (error) {
           console.log(error);
           res.render("contact", {
             error: "Un problème a été rencontré lors de l'envoi du message."

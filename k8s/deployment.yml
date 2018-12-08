@@ -1,0 +1,50 @@
+kind: Ingress
+apiVersion: extensions/v1beta1
+metadata:
+  name: remyperu
+  annotations:
+    nginx.ingress.kubernetes.io/from-to-www-redirect: "true"
+    certmanager.k8s.io/cluster-issuer: letsencrypt-prod
+spec:
+  rules:
+    - host: remyperu.fr
+    - http:
+        paths:
+          - path: /
+            backend:
+              serviceName: remyperu
+              servicePort: 8000
+  tls:
+    - hosts:
+        - remyperu.fr
+      secretName: remyperu.fr-tls
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: remyperu
+spec:
+  selector:
+    app: remyperu
+  ports:
+    - port: 8000
+      targetPort: 8000
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: remyperu
+spec:
+  selector:
+    matchLabels:
+      app: remyperu
+  template:
+    metadata:
+      labels:
+        app: remyperu
+    spec:
+      containers:
+        - name: remyperu
+          image: kilbiller/remyperu.fr
+          ports:
+            - containerPort: 8000
