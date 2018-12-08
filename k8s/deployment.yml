@@ -3,12 +3,11 @@ apiVersion: extensions/v1beta1
 metadata:
   name: remyperu
   annotations:
-    nginx.ingress.kubernetes.io/from-to-www-redirect: "true"
     certmanager.k8s.io/cluster-issuer: letsencrypt-prod
 spec:
   rules:
     - host: remyperu.fr
-    - http:
+      http:
         paths:
           - path: /
             backend:
