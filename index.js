@@ -13,7 +13,7 @@ var app = express();
 // set global variables
 app.set("port", process.env.PORT || 8000);
 app.set("views", path.join(__dirname, "views"));
-app.set("view engine", "jade");
+app.set("view engine", "pug");
 
 // to use markdown in templates
 app.locals.marked = marked;
