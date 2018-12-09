@@ -1,11 +1,15 @@
 # remyperu.fr
 
-Mon site personnel hébergé sur https://remyperu.fr
+My own website https://remyperu.fr
 
-## Librairies utilisées
+## Technologies
 
+- NodeJS
 - Express
-- Jade
-- JQuery 2.1.3
-- Bootstrap 3.3.5
-- Font Awesome 4.3.0
+- Kubernetes
+
+## Deployment
+
+```bash
+helm upgrade --install --name remyperu-web k8s/remyperu-web
+```
