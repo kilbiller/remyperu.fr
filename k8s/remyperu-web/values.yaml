@@ -6,7 +6,7 @@ replicaCount: 1
 
 image:
   repository: kilbiller/remyperu.fr
-  tag: v2
+  tag: v2.0.1
   pullPolicy: IfNotPresent
 
 nameOverride: ""
