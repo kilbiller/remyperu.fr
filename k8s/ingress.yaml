@@ -1,0 +1,33 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: remyperu-web
+  labels:
+    app.kubernetes.io/name: remyperu-web
+  annotations:
+    certmanager.k8s.io/cluster-issuer: letsencrypt-prod
+    nginx.ingress.kubernetes.io/configuration-snippet: |
+      if ($host = 'remyperu.fr' ) {
+        rewrite ^ https://www.remyperu.fr$request_uri permanent;
+      }
+spec:
+  tls:
+    - hosts:
+        - remyperu.fr
+        - www.remyperu.fr
+      secretName: remyperu.fr-tls
+  rules:
+    - host: remyperu.fr
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: remyperu-web
+              servicePort: http
+    - host: www.remyperu.fr
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: remyperu-web
+              servicePort: http
