@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: remyperu-web
-          image: "kilbiller/remyperu.fr:v2.0.1"
+          image: "kilbiller/remyperu.fr:v2.0.2"
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
