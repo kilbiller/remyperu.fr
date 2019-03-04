@@ -10,11 +10,17 @@ metadata:
       if ($host = 'remyperu.fr' ) {
         rewrite ^ https://www.remyperu.fr$request_uri permanent;
       }
+
+      if ($host = 'remyperu.dev' ) {
+        rewrite ^ https://www.remyperu.dev$request_uri permanent;
+      }
 spec:
   tls:
     - hosts:
         - remyperu.fr
         - www.remyperu.fr
+        - remyperu.dev
+        - www.remyperu.dev
       secretName: remyperu.fr-tls
   rules:
     - host: remyperu.fr
@@ -25,6 +31,20 @@ spec:
               serviceName: remyperu-web
               servicePort: http
     - host: www.remyperu.fr
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: remyperu-web
+              servicePort: http
+    - host: remyperu.dev
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: remyperu-web
+              servicePort: http
+    - host: www.remyperu.dev
       http:
         paths:
           - path: /
