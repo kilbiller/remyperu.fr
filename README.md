@@ -11,5 +11,5 @@ My own website https://remyperu.fr
 ## Deployment
 
 ```bash
-helm upgrade --install remyperu-web k8s/remyperu-web
+kustomize build k8s/production | kubectl --kubeconfig ~/admin.conf apply -f -
 ```
