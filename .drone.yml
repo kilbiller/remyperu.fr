@@ -11,9 +11,9 @@ steps:
       password:
         from_secret: docker_password
       tags:
-        - "${DRONE_BRANCH}"
+        - "${DRONE_BRANCH:=latest}"
         - "${DRONE_COMMIT_SHA:0:7}"
-        - "${DRONE_TAG:=${DRONE_BRANCH}}"
+        - "${DRONE_TAG:=latest}"
       cache_from:
         - "kilbiller/remyperu.fr:master"
         - "kilbiller/remyperu.fr:${DRONE_BRANCH}"
