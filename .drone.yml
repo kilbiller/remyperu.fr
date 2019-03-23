@@ -6,3 +6,8 @@ steps:
     image: plugins/docker
     settings:
       repo: kilbiller/remyperu.fr
+      username:
+        from_secret: docker_username
+      password:
+        from_secret: docker_password
+      auto_tag: true
