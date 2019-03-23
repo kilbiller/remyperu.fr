@@ -4,6 +4,8 @@
 
 My own website https://remyperu.fr
 
+Docker images are built automatically
+
 ## Technologies
 
 - NodeJS
