@@ -1,5 +1,6 @@
 .git
 k8s
 node_modules
+.drone.yml
 .gitignore
 README.md
