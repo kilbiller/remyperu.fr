@@ -44,8 +44,7 @@ steps:
       KUBECONF:
         from_secret: kubeconf
     commands:
-      - echo $KUBECONF > kube.conf
-      - cat kube.conf
+      - echo $KUBECONF | base64 -d > kube.conf
       - kubectl --kubeconfig kube.conf get pods
       - kubectl --kubeconfig kube.conf apply -f /tmp/cache/deploy.yml
     when:
