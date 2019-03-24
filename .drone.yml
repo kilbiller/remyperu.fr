@@ -23,3 +23,8 @@ steps:
       cache_from:
         - "kilbiller/remyperu.fr:master"
         - "kilbiller/remyperu.fr:${DRONE_BRANCH}"
+
+trigger:
+  event:
+    - push
+    - tag
