@@ -26,20 +26,30 @@ steps:
 
   - name: build_kustomize_config
     image: bitlayer/kustomize:v2.0.3
+    volumes:
+      - name: cache
+        path: /tmp/cache
     commands:
-      - kustomize build k8s/production > deploy.yml
+      - kustomize build k8s/production > /tmp/cache/deploy.yml
     when:
       event:
         - tag
 
   - name: deploy
     image: lachlanevenson/k8s-kubectl:v1.13.4
+    volumes:
+      - name: cache
+        path: /tmp/cache
     environment:
       KUBECONF:
         from_secret: kubeconf
     commands:
       - echo ${KUBECONF} > kube.conf
-      - kubectl --kubeconfig kube.conf apply -f deploy.yml
+      - kubectl --kubeconfig kube.conf apply -f /tmp/cache/deploy.yml
     when:
       event:
         - tag
+
+volumes:
+  - name: cache
+    temp: {}
