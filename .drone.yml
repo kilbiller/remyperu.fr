@@ -2,6 +2,12 @@ kind: pipeline
 name: default
 
 steps:
+  - name: lint
+    image: node:10-alpine
+    commands:
+      - yarn install
+      - yarn run lint
+
   - name: build
     image: plugins/docker
     settings:
