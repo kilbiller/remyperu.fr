@@ -45,6 +45,8 @@ steps:
         from_secret: kubeconf
     commands:
       - echo $KUBECONF > kube.conf
+      - cat kube.conf
+      - kubectl --kubeconfig kube.conf get pods
       - kubectl --kubeconfig kube.conf apply -f /tmp/cache/deploy.yml
     when:
       event:
