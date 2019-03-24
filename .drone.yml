@@ -30,8 +30,10 @@ steps:
       - name: cache
         path: /tmp/cache
     commands:
-      - sed -i "s/v2.0.2/$DRONE_TAG/" k8s/base/kustomization.yaml
-      - kustomize build k8s/production > /tmp/cache/deploy.yml
+      - cd k8s/production
+      - kustomize edit set image kilbiller/remyperu.fr:$DRONE_TAG
+      - kustomize build > /tmp/cache/deploy.yml
+      - cat /tmp/cache/deploy.yml
     when:
       event:
         - tag

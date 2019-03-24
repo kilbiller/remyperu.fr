@@ -4,7 +4,3 @@ kind: Kustomization
 resources:
   - app-deploy.yaml
   - app-svc.yaml
-
-images:
-  - name: kilbiller/remyperu.fr
-    newTag: v2.0.2
