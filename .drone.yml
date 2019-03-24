@@ -24,7 +24,22 @@ steps:
         - "kilbiller/remyperu.fr:master"
         - "kilbiller/remyperu.fr:${DRONE_BRANCH}"
 
-trigger:
-  event:
-    - push
-    - tag
+  - name: Generate deployment file
+    image: bitlayer/kustomize:v2.0.3
+    commands:
+      - kustomize build k8s/production > deploy.yml
+    when:
+      event:
+        - tag
+
+  - name: Deploy to k8s cluster
+    image: lachlanevenson/k8s-kubectl:v1.13.4
+    environment:
+      KUBECONF:
+        from_secret: kubeconf
+    commands:
+      - echo ${KUBECONF} > /root/.kube/config
+      - kubectl apply -f deploy.yml
+    when:
+      event:
+        - tag
