@@ -38,8 +38,8 @@ steps:
       KUBECONF:
         from_secret: kubeconf
     commands:
-      - echo ${KUBECONF} > /root/.kube/config
-      - kubectl apply -f deploy.yml
+      - echo ${KUBECONF} > kube.conf
+      - kubectl --kubeconfig kube.conf apply -f deploy.yml
     when:
       event:
         - tag
