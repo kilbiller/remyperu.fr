@@ -30,6 +30,7 @@ steps:
       - name: cache
         path: /tmp/cache
     commands:
+      - sed -i "s/v2.0.2/$DRONE_TAG/" k8s/base/kustomization.yaml
       - kustomize build k8s/production > /tmp/cache/deploy.yml
     when:
       event:
@@ -45,7 +46,6 @@ steps:
         from_secret: kubeconf
     commands:
       - echo $KUBECONF | base64 -d > kube.conf
-      - kubectl --kubeconfig kube.conf get pods
       - kubectl --kubeconfig kube.conf apply -f /tmp/cache/deploy.yml
     when:
       event:
