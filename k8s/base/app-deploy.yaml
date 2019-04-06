@@ -1,4 +1,4 @@
-apiVersion: apps/v1beta2
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: remyperu-web
@@ -16,8 +16,8 @@ spec:
     spec:
       containers:
         - name: remyperu-web
-          image: "kilbiller/remyperu.fr"
-          imagePullPolicy: IfNotPresent
+          image: "kilbiller/remyperu.fr:v1.0.0"
+          imagePullPolicy: Always
           ports:
             - name: http
               containerPort: 8000
@@ -30,3 +30,10 @@ spec:
             httpGet:
               path: /
               port: http
+          resources:
+            requests:
+              memory: "25Mi"
+              cpu: "0.01"
+            limits:
+              memory: "1Gi"
+              cpu: "1"
