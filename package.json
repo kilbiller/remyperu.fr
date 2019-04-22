@@ -16,6 +16,7 @@
   },
   "scripts": {
     "start": "node --experimental-modules index.mjs",
+    "lint": "prettier -l package.json *.mjs *.html",
     "fmt": "prettier --write package.json *.mjs *.html"
   },
   "prettier": {}
