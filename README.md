@@ -7,7 +7,7 @@ My own website https://remyperu.fr
 ## Technologies
 
 - NodeJS
-- Express
+- Koa
 - Kubernetes
 
 ## Deployment

@@ -8,7 +8,7 @@ RUN yarn install --production --frozen-lockfile
 
 ENV NODE_ENV=production
 
-EXPOSE 8000
+EXPOSE 3000
 
 ENTRYPOINT [ "yarn" ]
 CMD [ "start" ]
