@@ -13,5 +13,5 @@ My own website https://remyperu.fr
 ## Deployment
 
 ```bash
-kubectl --kubeconfig ~/admin.conf apply -k k8s/overlays/production
+kustomize build k8s/overlays/production | kubectl apply -f -
 ```
