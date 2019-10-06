@@ -17,15 +17,15 @@ steps:
       password:
         from_secret: docker_password
       tags:
-        - '${DRONE_BRANCH:=latest}'
-        - '${DRONE_COMMIT_SHA:0:7}'
-        - '${DRONE_TAG:=latest}'
+        - "${DRONE_BRANCH:=latest}"
+        - "${DRONE_COMMIT_SHA:0:7}"
+        - "${DRONE_TAG:=latest}"
       cache_from:
-        - 'kilbiller/remyperu.fr:master'
-        - 'kilbiller/remyperu.fr:${DRONE_BRANCH}'
+        - "kilbiller/remyperu.fr:master"
+        - "kilbiller/remyperu.fr:${DRONE_BRANCH}"
 
   - name: build_kustomize_config
-    image: bitlayer/kustomize:v2.0.3
+    image: bitlayer/kustomize:v2.1.0
     volumes:
       - name: cache
         path: /tmp/cache
@@ -39,7 +39,7 @@ steps:
         - tag
 
   - name: deploy
-    image: lachlanevenson/k8s-kubectl:v1.13.4
+    image: lachlanevenson/k8s-kubectl:v1.16.0
     volumes:
       - name: cache
         path: /tmp/cache
