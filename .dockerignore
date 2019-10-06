@@ -1,4 +1,5 @@
 .git
+dist
 k8s
 node_modules
 .drone.yml

@@ -9,15 +9,28 @@
   "dependencies": {
     "koa": "^2.7.0",
     "koa-router": "^7.4.0",
-    "koa-static": "^5.0.0"
+    "koa-static": "^5.0.0",
+    "react": "^16.10.2"
   },
   "devDependencies": {
-    "prettier": "^1.17.0"
+    "@types/koa": "^2.0.50",
+    "@types/koa-router": "^7.0.42",
+    "@types/koa-static": "^4.0.1",
+    "@types/react": "^16.9.5",
+    "@types/react-dom": "^16.9.1",
+    "nodemon": "^1.19.3",
+    "prettier": "^1.17.0",
+    "react-dom": "^16.10.2",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.3"
   },
   "scripts": {
-    "start": "node --experimental-modules index.mjs",
-    "lint": "prettier -l package.json *.mjs *.html",
-    "fmt": "prettier --write package.json *.mjs *.html"
+    "build": "tsc",
+    "clean": "rm -rf dist",
+    "dev": "nodemon --watch src --exec ts-node src/index.tsx",
+    "start": "node dist/index.js",
+    "lint": "prettier -l package.json src/**/*.tsx?",
+    "fmt": "prettier --write package.json src/**/*.tsx?"
   },
   "prettier": {}
 }
