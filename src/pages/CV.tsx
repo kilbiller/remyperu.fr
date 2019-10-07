@@ -2,12 +2,14 @@ import React from "react";
 
 import Page from "../components/Page";
 import Header from "../components/Header";
+import Main from "../components/Main";
+import Link from "../components/Link";
 
 const CV: React.SFC = () => {
   return (
     <Page>
       <Header />
-      <main className="ph6-l ph4 f4">
+      <Main>
         <h2 className="f2">
           <span className="bg-yellow ph2">Skills</span>
         </h2>
@@ -24,7 +26,6 @@ const CV: React.SFC = () => {
           <span className="b">Mobile:</span> React Native, Ionic, Cordova,
           Offline-first
         </p>
-
         <h2 className="f2">
           <span className="bg-yellow ph2">Work Experience</span>
         </h2>
@@ -48,7 +49,6 @@ const CV: React.SFC = () => {
             @Mairie d'Arles
           </a>
         </p>
-
         <h2 className="f2">
           <span className="bg-yellow ph2">Education</span>
         </h2>
@@ -69,7 +69,6 @@ const CV: React.SFC = () => {
             @IUT d'Arles
           </a>
         </p>
-
         <p className="mt4 mt5-ns">
           You can get my full resume in PDF{" "}
           <a
@@ -80,7 +79,7 @@ const CV: React.SFC = () => {
           </a>
           .
         </p>
-      </main>
+      </Main>
     </Page>
   );
 };

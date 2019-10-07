@@ -2,12 +2,13 @@ import React from "react";
 
 import Page from "../components/Page";
 import Header from "../components/Header";
+import Main from "../components/Main";
 
 const Home: React.SFC = () => {
   return (
     <Page>
       <Header />
-      <main className="ph6-l ph4 f4">
+      <Main>
         <h1 className="f-subheadline">Hello,</h1>
         <p className="f2 measure-narrow">
           My name is Rémy Peru and I am a{" "}
@@ -18,7 +19,7 @@ const Home: React.SFC = () => {
           <span className="bg-yellow">secure</span> web/mobile apps using the
           lastest technologies and best practices.
         </p>
-      </main>
+      </Main>
     </Page>
   );
 };

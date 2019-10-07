@@ -2,41 +2,40 @@ import React from "react";
 
 import Page from "../components/Page";
 import Header from "../components/Header";
+import Main from "../components/Main";
+import Link from "../components/Link";
 
 const Contact: React.SFC = () => {
   return (
     <Page>
       <Header />
-      <main className="ph6-l ph4 f4">
+      <Main>
         <p>
-          <a className="link blue dim" href="https://github.com/kilbiller">
+          <Link href="https://github.com/kilbiller">
             <img src="/img/octocat.svg" alt="Octocat" className="v-mid" />{" "}
             kilbiller
-          </a>
+          </Link>
         </p>
 
         <p>
-          <a className="link blue dim" href="https://twitter.com/remy_peru">
+          <Link href="https://twitter.com/remy_peru">
             <img src="/img/twitter.svg" alt="Twitter" className="v-mid" />{" "}
             @remy_peru
-          </a>
+          </Link>
         </p>
 
         <p>
-          <a
-            className="link blue dim"
-            href="https://www.linkedin.com/in/remyperu"
-          >
+          <Link href="https://www.linkedin.com/in/remyperu">
             <img src="/img/linkedin.svg" alt="LinkedIn" className="v-mid" />{" "}
             remyperu
-          </a>
+          </Link>
         </p>
 
         <p>
-          <a className="link blue dim" href="mailto:peru.remy@gmail.com">
+          <Link href="mailto:peru.remy@gmail.com">
             <img src="/img/gmail.svg" alt="Mail" className="v-mid" />{" "}
             peru.remy@gmail.com
-          </a>
+          </Link>
         </p>
 
         <p>
@@ -118,7 +117,7 @@ const Contact: React.SFC = () => {
             <span className="db tc">-----END PGP PUBLIC KEY BLOCK-----</span>
           </code>
         </p>
-      </main>
+      </Main>
     </Page>
   );
 };
