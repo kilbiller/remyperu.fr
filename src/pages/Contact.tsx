@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
-import Page from "../components/Page";
-import Header from "../components/Header";
-import Main from "../components/Main";
-import Link from "../components/Link";
+import Page from '../components/Page';
+import Header from '../components/Header';
+import Main from '../components/Main';
+import Link from '../components/Link';
 
 const Contact: React.SFC = () => {
   return (
@@ -12,35 +12,35 @@ const Contact: React.SFC = () => {
       <Main>
         <p>
           <Link href="https://github.com/kilbiller">
-            <img src="/img/octocat.svg" alt="Octocat" className="v-mid" />{" "}
+            <img src="/img/octocat.svg" alt="Octocat" className="v-mid" />{' '}
             kilbiller
           </Link>
         </p>
 
         <p>
           <Link href="https://twitter.com/remy_peru">
-            <img src="/img/twitter.svg" alt="Twitter" className="v-mid" />{" "}
+            <img src="/img/twitter.svg" alt="Twitter" className="v-mid" />{' '}
             @remy_peru
           </Link>
         </p>
 
         <p>
           <Link href="https://www.linkedin.com/in/remyperu">
-            <img src="/img/linkedin.svg" alt="LinkedIn" className="v-mid" />{" "}
+            <img src="/img/linkedin.svg" alt="LinkedIn" className="v-mid" />{' '}
             remyperu
           </Link>
         </p>
 
         <p>
           <Link href="mailto:peru.remy@gmail.com">
-            <img src="/img/gmail.svg" alt="Mail" className="v-mid" />{" "}
+            <img src="/img/gmail.svg" alt="Mail" className="v-mid" />{' '}
             peru.remy@gmail.com
           </Link>
         </p>
 
         <p>
           <code
-            style={{ wordBreak: "break-all" }}
+            style={{ wordBreak: 'break-all' }}
             className="db mt4 mt5-ns mw7 center bg-light-gray pa3 ph4-ns code"
           >
             <span className="db tc">-----BEGIN PGP PUBLIC KEY BLOCK-----</span>

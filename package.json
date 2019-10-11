@@ -29,8 +29,10 @@
     "clean": "rm -rf dist",
     "dev": "nodemon --watch src --exec ts-node src/index.tsx",
     "start": "node dist/index.js",
-    "lint": "prettier -l package.json src/**/*.tsx?",
-    "fmt": "prettier --write package.json src/**/*.tsx?"
+    "lint": "prettier -l package.json src/**/*.{ts,tsx}",
+    "fmt": "prettier --write package.json src/**/*.{ts,tsx}"
   },
-  "prettier": {}
+  "prettier": {
+    "singleQuote": true
+  }
 }
