@@ -1,33 +1,28 @@
 import React from 'react';
 
+interface Props {
+  href: string;
+}
+
+const NavLink: React.SFC<Props> = ({ children, href }) => {
+  return (
+    <li className="bg-yellow p-2 sm:mr-4">
+      <a href={href} className="hover:underline text-black">
+        {children}
+      </a>
+    </li>
+  );
+};
+
 const Header: React.SFC = () => {
   return (
-    <header className="mb5-ns">
+    <header>
       <nav>
-        <ul className="list mv0 pl0 f2 f3-ns mt5-ns mr5-ns flex justify-end flex-column flex-row-ns">
-          <li className="bg-yellow pa2 mr3-ns">
-            <a href="/" className="link underline-hover black">
-              Home
-            </a>
-          </li>
-          <li className="bg-yellow pa2 mr3-ns">
-            <a href="/cv" className="link underline-hover black">
-              CV
-            </a>
-          </li>
-          <li className="bg-yellow pa2 mr3-ns">
-            <a
-              href="https://github.com/kilbiller"
-              className="link underline-hover black"
-            >
-              Projects
-            </a>
-          </li>
-          <li className="bg-yellow pa2 mr3-ns">
-            <a href="/contact" className="link underline-hover black">
-              Contact
-            </a>
-          </li>
+        <ul className="text-4xl sm:text-2xl leading-tight sm:m-16 flex justify-end flex-col sm:flex-row">
+          <NavLink href="/">Home</NavLink>
+          <NavLink href="/cv">CV</NavLink>
+          <NavLink href="https://github.com/kilbiller">Projects</NavLink>
+          <NavLink href="/contact">Contact</NavLink>
         </ul>
       </nav>
     </header>

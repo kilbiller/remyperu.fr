@@ -6,7 +6,7 @@ interface Props {
 
 const Link: React.FunctionComponent<Props> = ({ children, href }) => {
   return (
-    <a href={href} className="link blue dim">
+    <a href={href} className="text-blue hover:opacity-50">
       {children}
     </a>
   );

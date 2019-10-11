@@ -10,40 +10,39 @@ const Contact: React.SFC = () => {
     <Page>
       <Header />
       <Main>
-        <p>
+        <p className="my-5">
           <Link href="https://github.com/kilbiller">
-            <img src="/img/octocat.svg" alt="Octocat" className="v-mid" />{' '}
+            <img src="/img/octocat.svg" alt="Octocat" className="inline" />{' '}
             kilbiller
           </Link>
         </p>
 
-        <p>
+        <p className="my-5">
           <Link href="https://twitter.com/remy_peru">
-            <img src="/img/twitter.svg" alt="Twitter" className="v-mid" />{' '}
+            <img src="/img/twitter.svg" alt="Twitter" className="inline" />{' '}
             @remy_peru
           </Link>
         </p>
 
-        <p>
+        <p className="my-5">
           <Link href="https://www.linkedin.com/in/remyperu">
-            <img src="/img/linkedin.svg" alt="LinkedIn" className="v-mid" />{' '}
+            <img src="/img/linkedin.svg" alt="LinkedIn" className="inline" />{' '}
             remyperu
           </Link>
         </p>
 
-        <p>
+        <p className="my-5">
           <Link href="mailto:peru.remy@gmail.com">
-            <img src="/img/gmail.svg" alt="Mail" className="v-mid" />{' '}
+            <img src="/img/gmail.svg" alt="Mail" className="inline" />{' '}
             peru.remy@gmail.com
           </Link>
         </p>
 
-        <p>
-          <code
-            style={{ wordBreak: 'break-all' }}
-            className="db mt4 mt5-ns mw7 center bg-light-gray pa3 ph4-ns code"
-          >
-            <span className="db tc">-----BEGIN PGP PUBLIC KEY BLOCK-----</span>
+        <p className="my-5">
+          <code className="block mt-12 max-w-3xl m-auto bg-light-gray p-4 sm:px-8 break-all">
+            <span className="block text-center">
+              -----BEGIN PGP PUBLIC KEY BLOCK-----
+            </span>
             mQINBFyzBz4BEAC5nuZRPlombDU4zCkbLqSibFtnG3sFmRQv2j51EQdt/j8R3cnt
             PAyCkQEKqHtsErY4iX/UXhLVi+UZQ3+MYDGJyyQyVKMT5TTrniTvgTkJv4dCCaCG
             Zye4qyjof0FviNZRJ1JQEinjkYKFSIIHyYAnRCorQ+59LCdzjeDMntHD3wU1UVWx
@@ -114,7 +113,9 @@ const Contact: React.SFC = () => {
             G1rrUaLsdLxg1kctmtUeLSOOdLCTGCDUPUVFtNVqYNXdxpCog+pqhvxhdCdJlTGU
             6duKcOS/XuaCKlHKaJtnJhxFgVqtxbaeXyvxYGAhMjnBUYGkjaX0ockMnO+mJw0o
             i91ez6U01hKM/3Q/k5PcGn1EDrRBMxZ5hk1WEYsz3ZrKHyymSQ== =znxT
-            <span className="db tc">-----END PGP PUBLIC KEY BLOCK-----</span>
+            <span className="block text-center">
+              -----END PGP PUBLIC KEY BLOCK-----
+            </span>
           </code>
         </p>
       </Main>

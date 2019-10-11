@@ -10,57 +10,59 @@ const CV: React.SFC = () => {
     <Page>
       <Header />
       <Main>
-        <h2 className="f2">
+        <h2 className="text-4xl font-bold my-6">
           <span className="bg-yellow ph2">Skills</span>
         </h2>
-        <p>
-          <span className="b">Frontend:</span> HTML, CSS (Sass, Bootstrap,
-          Tachyons), Javascript (ES6/Typescript), React/Redux, AngularJS
+        <p className="my-5">
+          <span className="font-bold">Frontend:</span> HTML, CSS (Sass,
+          Bootstrap, Tachyons), Javascript (ES6/Typescript), React/Redux,
+          AngularJS
         </p>
-        <p>
-          <span className="b">Backend:</span> PHP (Laravel/Symfony/CakePHP),
-          Node.js (express, koa), Databases (MySQL, Postgres, SQLite), Nginx,
-          Devops (Ansible, Docker, Kubernetes), API Design
+        <p className="my-5">
+          <span className="font-bold">Backend:</span> PHP
+          (Laravel/Symfony/CakePHP), Node.js (express, koa), Databases (MySQL,
+          Postgres, SQLite), Nginx, Devops (Ansible, Docker, Kubernetes), API
+          Design
         </p>
-        <p>
-          <span className="b">Mobile:</span> React Native, Ionic, Cordova,
-          Offline-first
+        <p className="my-5">
+          <span className="font-bold">Mobile:</span> React Native, Ionic,
+          Cordova, Offline-first
         </p>
-        <h2 className="f2">
+        <h2 className="text-4xl font-bold my-6">
           <span className="bg-yellow ph2">Work Experience</span>
         </h2>
-        <p>
-          <span className="b">August 2015 - present:</span> Web developer{' '}
-          <Link href="https://www.invityou.com">@Corpo'Events</Link>
+        <p className="my-5">
+          <span className="font-bold">August 2015 - present:</span> Web
+          developer <Link href="https://www.invityou.com">@Corpo'Events</Link>
         </p>
-        <p>
-          <span className="b">November 2013 - April 2014:</span> Hybrid app
-          developer (Intern){' '}
+        <p className="my-5">
+          <span className="font-bold">November 2013 - April 2014:</span> Hybrid
+          app developer (Intern){' '}
           <Link href="https://www.cirad.fr/en/home-page">
             @CIRAD Montpellier
           </Link>
         </p>
-        <p>
-          <span className="b">April 2012 - July 2012:</span> PHP developer
-          (Intern){' '}
+        <p className="my-5">
+          <span className="font-bold">April 2012 - July 2012:</span> PHP
+          developer (Intern){' '}
           <Link href="https://www.ville-arles.fr/mairie">@Mairie d'Arles</Link>
         </p>
-        <h2 className="f2">
+        <h2 className="text-4xl font-bold my-6">
           <span className="bg-yellow ph2">Education</span>
         </h2>
-        <p>
-          <span className="b">2012 - 2013:</span> Bachelor's degree (Licence) in
-          computer science{' '}
+        <p className="my-5">
+          <span className="font-bold">2012 - 2013:</span> Bachelor's degree
+          (Licence) in computer science{' '}
           <Link href="https://www.umontpellier.fr/en/">
             @Montpellier 2 University
           </Link>
         </p>
-        <p>
-          <span className="b">2010 - 2012:</span> University Degree (DUT) in
-          computer science{' '}
+        <p className="my-5">
+          <span className="font-bold">2010 - 2012:</span> University Degree
+          (DUT) in computer science{' '}
           <Link href="https://iut.univ-amu.fr/sites/arles">@IUT d'Arles</Link>
         </p>
-        <p className="mt4 mt5-ns">
+        <p className="my-5 mt-12">
           You can get my full resume in PDF{' '}
           <Link href="https://drive.google.com/uc?export=download&id=0B-HUrU55uuTtTHlSNWdqVzZMaVk">
             here

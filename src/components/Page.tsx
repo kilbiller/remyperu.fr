@@ -28,23 +28,15 @@ const Page: React.SFC = ({ children }) => {
           href="/favicon/favicon-16x16.png"
         />
         <link rel="manifest" href="/favicon/site.webmanifest" />
-        <link
-          rel="stylesheet"
-          href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css"
-        />
+
+        <link rel="stylesheet" href="css/main.css" />
+
         <link
           href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap"
           rel="stylesheet"
         />
-        <style
-          dangerouslySetInnerHTML={{
-            __html: `.ibm {
-	font-family: "IBM Plex Mono", monospace;
-  }`
-          }}
-        ></style>
       </head>
-      <body className="ibm w-100">{children}</body>
+      <body className="font-mono w-full text-xl">{children}</body>
     </html>
   );
 };
