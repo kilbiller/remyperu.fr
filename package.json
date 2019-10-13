@@ -20,6 +20,7 @@
     "@types/koa-static": "^4.0.1",
     "@types/react": "^16.9.5",
     "@types/react-dom": "^16.9.1",
+    "cssnano": "^4.1.10",
     "nodemon": "^1.19.3",
     "postcss": "^7.0.18",
     "postcss-cli": "^6.1.3",
