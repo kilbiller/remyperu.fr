@@ -1,6 +1,8 @@
-FROM node:10-alpine
+FROM node:14-alpine
 
-COPY . /app
+USER node
+
+COPY --chown=node:node . /app
 
 WORKDIR /app
 

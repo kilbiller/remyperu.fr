@@ -10,6 +10,18 @@ My own website https://remyperu.fr
 - Koa
 - Kubernetes
 
+## Build docker image
+
+```bash
+DOCKER_BUILDKIT=1 docker build . -t kilbiller/remyperu.fr
+```
+
+## Run image
+
+```bash
+docker run -p 8000:8000 -d kilbiller/remyperu.fr:latest
+```
+
 ## Deployment
 
 ```bash
