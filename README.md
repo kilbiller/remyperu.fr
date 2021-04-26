@@ -10,10 +10,25 @@ My own website https://remyperu.fr
 - Koa
 - Kubernetes
 
+## Setup docker for multi arch build
+
+```bash
+# Add QEMU emulator support for arm and other architectures
+docker run --privileged --rm tonistiigi/binfmt --install all
+# Create builder & use instance
+docker buildx create --use --name multi_builder
+```
+
 ## Build docker image
 
 ```bash
-DOCKER_BUILDKIT=1 docker build . -t kilbiller/remyperu.fr
+docker buildx build --load . -t kilbiller/remyperu.fr
+```
+
+## Push docker image
+
+```bash
+docker buildx build --platform linux/amd64,linux/arm64 --push . -t kilbiller/remyperu.fr
 ```
 
 ## Run image
