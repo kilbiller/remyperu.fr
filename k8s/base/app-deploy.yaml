@@ -17,7 +17,6 @@ spec:
       containers:
         - name: remyperu-web
           image: "kilbiller/remyperu.fr:v1.0.0"
-          imagePullPolicy: Always
           ports:
             - name: http
               containerPort: 8000
