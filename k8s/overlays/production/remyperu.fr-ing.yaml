@@ -1,0 +1,27 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: remyperu.fr
+  labels:
+    app.kubernetes.io/name: remyperu-web
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-prod
+    nginx.ingress.kubernetes.io/from-to-www-redirect: "true"
+spec:
+  ingressClassName: nginx
+  tls:
+    - hosts:
+        - remyperu.fr
+        - www.remyperu.fr
+      secretName: remyperu.fr-tls
+  rules:
+    - host: www.remyperu.fr
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: remyperu-web
+                port:
+                  number: 80
