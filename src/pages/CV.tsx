@@ -15,18 +15,16 @@ const CV: React.SFC = () => {
         </h2>
         <p className="my-5">
           <span className="font-bold">Frontend:</span> HTML, CSS (Sass,
-          Bootstrap, Tachyons), Javascript (ES6/Typescript), React/Redux,
+          Bootstrap, Tailwind CSS), Javascript (ES6/Typescript), React/Redux,
           AngularJS
         </p>
         <p className="my-5">
-          <span className="font-bold">Backend:</span> PHP
-          (Laravel/Symfony/CakePHP), Node.js (express, koa), Databases (MySQL,
-          Postgres, SQLite), Nginx, Devops (Ansible, Docker, Kubernetes), API
-          Design
+          <span className="font-bold">Backend:</span> PHP (Laravel/Symfony),
+          Node.js (express, koa, nextjs), Databases (MySQL, Postgres, SQLite),
+          Nginx, Devops (Ansible, Docker, Kubernetes), API Design
         </p>
         <p className="my-5">
-          <span className="font-bold">Mobile:</span> React Native, Ionic,
-          Cordova, Offline-first
+          <span className="font-bold">Mobile:</span> React Native, Offline-first
         </p>
         <h2 className="text-4xl font-bold my-6">
           <span className="bg-yellow ph2">Work Experience</span>

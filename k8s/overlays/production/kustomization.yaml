@@ -11,7 +11,7 @@ commonLabels:
 
 images:
   - name: kilbiller/remyperu.fr
-    newTag: v4.2.1
+    newTag: v4.2.2
 
 patchesStrategicMerge:
   - app-deploy.yaml

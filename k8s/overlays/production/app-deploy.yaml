@@ -4,6 +4,9 @@ metadata:
   name: remyperu-web
 spec:
   replicas: 2
+  strategy:
+    rollingUpdate:
+      maxUnavailable: 1 # Else rolling update get stuck with podAntiAffinity rule
   template:
     spec:
       affinity:

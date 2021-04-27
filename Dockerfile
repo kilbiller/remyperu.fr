@@ -2,11 +2,13 @@ FROM node:14-alpine
 
 USER node
 
-COPY --chown=node:node . /app
-
 WORKDIR /app
 
+COPY --chown=node:node package.json yarn.lock /app/
+
 RUN yarn install --frozen-lockfile
+
+COPY --chown=node:node . /app
 
 ENV NODE_ENV=production
 
