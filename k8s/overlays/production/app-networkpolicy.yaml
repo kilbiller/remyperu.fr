@@ -1,0 +1,17 @@
+kind: NetworkPolicy
+apiVersion: networking.k8s.io/v1
+metadata:
+  name: remyperu-web
+spec:
+  podSelector:
+    matchLabels:
+      app.kubernetes.io/name: remyperu-web
+  policyTypes: ['Ingress']
+  ingress:
+    - from: # Allow only nginx controller to access our pods
+      - namespaceSelector:
+          matchLabels:
+            kubernetes.io/metadata.name: ingress-nginx
+      - podSelector:
+          matchLabels:
+            app.kubernetes.io/name: ingress-nginx
