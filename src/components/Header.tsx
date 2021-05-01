@@ -6,7 +6,7 @@ interface Props {
 
 const NavLink: React.SFC<Props> = ({ children, href }) => {
   return (
-    <li className="bg-yellow p-2 sm:mr-4">
+    <li className="bg-yellow p-2">
       <a href={href} className="hover:underline text-black">
         {children}
       </a>
@@ -18,7 +18,7 @@ const Header: React.SFC = () => {
   return (
     <header>
       <nav>
-        <ul className="text-4xl sm:text-2xl leading-tight sm:m-16 flex justify-end flex-col sm:flex-row">
+        <ul className="text-2xl sm:text-4xl leading-tight m-2 sm:m-16 flex justify-center space-x-2 sm:space-x-4 sm:justify-end flex-row">
           <NavLink href="/">Home</NavLink>
           <NavLink href="/cv">CV</NavLink>
           <NavLink href="https://github.com/kilbiller">Projects</NavLink>

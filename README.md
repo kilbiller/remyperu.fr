@@ -10,6 +10,14 @@ My own website https://remyperu.fr
 - Koa
 - Kubernetes
 
+## Dev
+
+We're using tilt to have a dev environment as close as a production kubernetes cluster as possible.
+
+```bash
+tilt up
+```
+
 ## Setup docker for multi arch build
 
 ```bash

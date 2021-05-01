@@ -11,7 +11,7 @@ const CV: React.SFC = () => {
       <Header />
       <Main>
         <h2 className="text-4xl font-bold my-6">
-          <span className="bg-yellow ph2">Skills</span>
+          <span className="bg-yellow">Skills</span>
         </h2>
         <p className="my-5">
           <span className="font-bold">Frontend:</span> HTML, CSS (Sass,
@@ -27,7 +27,7 @@ const CV: React.SFC = () => {
           <span className="font-bold">Mobile:</span> React Native, Offline-first
         </p>
         <h2 className="text-4xl font-bold my-6">
-          <span className="bg-yellow ph2">Work Experience</span>
+          <span className="bg-yellow">Work Experience</span>
         </h2>
         <p className="my-5">
           <span className="font-bold">August 2015 - present:</span> Web
@@ -46,7 +46,7 @@ const CV: React.SFC = () => {
           <Link href="https://www.ville-arles.fr/mairie">@Mairie d'Arles</Link>
         </p>
         <h2 className="text-4xl font-bold my-6">
-          <span className="bg-yellow ph2">Education</span>
+          <span className="bg-yellow">Education</span>
         </h2>
         <p className="my-5">
           <span className="font-bold">2012 - 2013:</span> Bachelor's degree

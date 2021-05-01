@@ -57,3 +57,5 @@ router.get('/kubernetes', (ctx, next) => {
 app.use(router.routes()).use(router.allowedMethods());
 
 app.listen(8000);
+
+console.log('Listening on port 8000.');
