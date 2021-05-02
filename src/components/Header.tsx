@@ -4,7 +4,7 @@ interface Props {
   href: string;
 }
 
-const NavLink: React.SFC<Props> = ({ children, href }) => {
+const NavLink: React.FC<Props> = ({ children, href }) => {
   return (
     <li className="bg-yellow p-2">
       <a href={href} className="hover:underline text-black">
@@ -14,7 +14,7 @@ const NavLink: React.SFC<Props> = ({ children, href }) => {
   );
 };
 
-const Header: React.SFC = () => {
+const Header: React.FC = () => {
   return (
     <header>
       <nav>

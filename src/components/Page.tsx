@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Page: React.SFC = ({ children }) => {
+const Page: React.FC = ({ children }) => {
   return (
     <html lang="en">
       <head>

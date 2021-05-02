@@ -5,7 +5,7 @@ import Header from '../components/Header';
 import Main from '../components/Main';
 import Link from '../components/Link';
 
-const CV: React.SFC = () => {
+const CV: React.FC = () => {
   return (
     <Page>
       <Header />

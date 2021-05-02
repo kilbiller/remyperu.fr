@@ -4,7 +4,7 @@ import Page from '../components/Page';
 import Header from '../components/Header';
 import Main from '../components/Main';
 
-const Home: React.SFC = () => {
+const Home: React.FC = () => {
   return (
     <Page>
       <Header />
