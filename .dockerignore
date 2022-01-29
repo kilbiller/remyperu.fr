@@ -1,7 +1,12 @@
-.git
-dist
-k8s
-node_modules
-.drone.yml
-.gitignore
-README.md
+# Ignore everything
+*
+
+# Only add what we need
+!public
+public/css
+!src
+!package.json
+!postcss.config.js
+!tailwind.config.js
+!tsconfig.json
+!yarn.lock
