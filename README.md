@@ -4,12 +4,6 @@
 
 My own website https://remyperu.fr
 
-## Technologies
-
-- NodeJS
-- Koa
-- Kubernetes
-
 ## Dev
 
 We're using tilt to have a dev environment as close as a production kubernetes cluster as possible.
