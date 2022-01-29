@@ -1,6 +1,6 @@
 # remyperu.fr
 
-[![Build Status](https://build.remyperu.dev/api/badges/kilbiller/remyperu.fr/status.svg)](https://build.remyperu.dev/kilbiller/remyperu.fr)
+![Build Status](https://github.com/kilbiller/remyperu.fr/actions/workflows/ci.yml/badge.svg)
 
 My own website https://remyperu.fr
 
