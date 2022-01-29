@@ -1,4 +1,4 @@
-FROM node:14-alpine
+FROM node:16-alpine
 
 USER node
 
@@ -6,7 +6,7 @@ WORKDIR /app
 
 COPY --chown=node:node package.json yarn.lock /app/
 
-RUN yarn install --frozen-lockfile
+RUN yarn install --frozen-lockfile && yarn cache clean
 
 COPY --chown=node:node . /app
 
