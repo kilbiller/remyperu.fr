@@ -60,7 +60,7 @@ jobs:
         run: |
           cd k8s/overlays/production
           kustomize edit set image kilbiller/remyperu.fr:${{ steps.get-tag.outputs.tag }}
-          kustomize build k8s/overlays/production
+          kustomize build .
 
       - name: Setup kubectl
         uses: ThomasKliszowski/setup-kubectl@v1
