@@ -36,3 +36,20 @@ jobs:
           push: true
           cache-from: type=gha
           cache-to: type=gha,mode=max
+
+      - name: Setup kustomize
+        uses: imranismail/setup-kustomize@v1
+
+      - name: Update kustomize config with latest image
+        run: |
+          kustomize edit set image kilbiller/remyperu.fr:${{ steps.get-tag.outputs.tag }}
+
+      - name: Setup kubectl
+        uses: ThomasKliszowski/setup-kubectl@v1
+        with:
+          kube-config: ${{ secrets.KUBECONFIG }}
+          kube-version: 1.23.0
+
+      - name: Deploy app
+        run: |
+          kustomize build k8s/overlays/production | kubectl apply -f -
