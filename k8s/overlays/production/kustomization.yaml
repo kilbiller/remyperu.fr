@@ -10,9 +10,5 @@ resources:
 commonLabels:
   app.kubernetes.io/managed-by: kustomize
 
-images:
-  - name: kilbiller/remyperu.fr
-    newTag: v4.3.0
-
 patchesStrategicMerge:
   - app-deploy.yaml

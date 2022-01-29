@@ -48,5 +48,6 @@ docker run -p 8000:8000 -d kilbiller/remyperu.fr:latest
 ## Deployment
 
 ```bash
+kustomize edit set image kilbiller/remyperu.fr:$TAG
 kustomize build k8s/overlays/production | kubectl apply -f -
 ```
