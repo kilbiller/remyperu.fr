@@ -4,6 +4,7 @@ import Page from '../components/Page';
 import Header from '../components/Header';
 import Main from '../components/Main';
 import Link from '../components/Link';
+import HighlightedText from '../components/HighlightedText';
 
 const CV: React.FC = () => {
   return (
@@ -11,7 +12,7 @@ const CV: React.FC = () => {
       <Header />
       <Main>
         <h2 className="text-4xl font-bold my-6">
-          <span className="bg-yellow">Skills</span>
+          <HighlightedText>Skills</HighlightedText>
         </h2>
         <p className="my-5">
           <span className="font-bold">Frontend:</span> HTML, CSS (Sass,
@@ -28,7 +29,7 @@ const CV: React.FC = () => {
           apps
         </p>
         <h2 className="text-4xl font-bold my-6">
-          <span className="bg-yellow">Work Experience</span>
+          <HighlightedText>Work Experience</HighlightedText>
         </h2>
         <p className="my-5">
           <span className="font-bold">August 2015 - present:</span> Web
@@ -48,7 +49,7 @@ const CV: React.FC = () => {
           <Link href="https://www.ville-arles.fr/mairie">@Mairie d'Arles</Link>
         </p>
         <h2 className="text-4xl font-bold my-6">
-          <span className="bg-yellow">Education</span>
+          <HighlightedText>Education</HighlightedText>
         </h2>
         <p className="my-5">
           <span className="font-bold">2012 - 2013:</span> Bachelor's degree

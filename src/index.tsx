@@ -41,10 +41,9 @@ router.get('/contact', (ctx, next) => {
 router.get('/kubernetes', (ctx, next) => {
   const interfaces = networkInterfaces();
 
-  const [{ address }] = Object.values(
-    (interfaces as unknown) as any[]
-  ).flatMap((interfaces: any[]) =>
-    interfaces.filter((prop) => prop.family === 'IPv4' && !prop.internal)
+  const [{ address }] = Object.values(interfaces as unknown as any[]).flatMap(
+    (interfaces: any[]) =>
+      interfaces.filter((prop) => prop.family === 'IPv4' && !prop.internal)
   );
 
   ctx.type = 'json';
